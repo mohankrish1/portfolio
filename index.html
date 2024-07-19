@@ -1,197 +1,317 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/style.css">
-    <title>Portfolio</title>
+    <title>Portfolio - Mohan Krishna</title>
+    <link rel="icon" href="images/portfolio_icon.ico">
+    <link rel="stylesheet" href="./styles/index.css">
+    <!-- =====BOX ICONS===== -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 </head>
+
 <body>
-        <div class="landing-page" id="landing-page">
-        <div class="main-header">
-            <div class="icon">
-            <h1><i class="fas fa-briefcase"></i></h1>
+    <!--===== HEADER =====-->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav__logo">
+                    < Mohan Krishna />
+                </a>
             </div>
-            <div class="header-links">
-                <a href="#landing-page">Home</a>
-                <a href="#about">About</a>
-                <a href="#skill">Skills</a>
-                <a href="#Project">Projects</a>
-                <a href="#contact">Contact</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav-link home active">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav-link about">About</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav-link skills">Skills</a></li>
+                    <li class="nav__item"><a href="#projects" class="nav-link projects">Projects</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav-link contact">Contact</a></li>
+                    <li class="nav__item"><a
+                            href="https://drive.google.com/u/0/uc?id=19vcd3TZcsH198WyYeyy3lvKFP2zD9W8x&export=download"
+                            class="nav-link resume" id="resume-link-1"><button id="resume-button-1"
+                                class="resume_button">Resume</button></a></li>
+                </ul>
             </div>
-        </div>
-        <div class="intro">
-            <div class="landing-text">
-                <h1>Welcome  <i class="fas fa-hand"></i></h1>
-                <h1>I am <span class="highlight">Mohan Krishna</span></h1>
-                <h1>MERN Developer</h1> 
-                <a href="https://drive.google.com/file/d/1MoIwyZHXJpTKnVuoF-p2xlmYejfwfE3T/view?usp=sharing" class="btn">Resume</a>
-                </div>
-            <div class="imag">
-                <img class="image" src="img/my-channel.jpg" alt="picture">
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
             </div>
-        </div>
-        </div>
-        <div id="about">
-            <h1 class="highlight">About</h1>
-            <h2>I'm Mohan Krishna</h2>
-            <p>Observant & detail-oriented aspiring full-stack web developer with a specialization in MERN stack. Judicious & creative when crafting web applications & platforms to propel competitive advantage & revenue growth. Looking forward to honing his skills in a challenging work environment.
-            </p>
-            <p>Drop a mail &commat; mohankrishna13012001&commat;gmail.com 
-                <i class="fas fa-copy"></i>
-            </p>
-        </div>
-        <div id="skills">
-            <h1 class="highlight" id="skill">Skills</h1>
-            <div class="skill-logos">
-                 <img src="img/html.png" alt="html_icon">
-                 <img src="img/css-3 (1).png" alt="css_icon">
-                 <img src="img/js.png" alt="react_icon">
-                 <img src="img/react.png" alt="react_icon">
-                 <img src="img/redux.png" alt="redux_icon">
-                 <img src="img/node.png" alt="node_icon">
-                 <img src="img/mangodb.png" alt="db_icon">
-                 <img src="img/bootstrap.png" alt="bootstrap_icon">
-                 <img src="img/git.png" alt="git_icon">
+        </nav>
+    </header>
+
+    <main class="l-main">
+
+        <!--===== HOME =====-->
+        <section class="home_main bd-grid" id="home">
+            <div class="home__data">
+                <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Mohan Krishna</span><br>Software Developer
+                </h1>
+
+                <a href="https://drive.google.com/u/0/uc?id=19vcd3TZcsH198WyYeyy3lvKFP2zD9W8x&export=download"
+                    id="resume-link-2">
+                    <button class="button" id="resume-button-2">Resume</button> </a>
             </div>
-        </div>
-        <div class="projects" id="Project">
-            <h1 class="highlight">Projects</h1>
-            <div class="project">
-                <div class="project-image_one">
-                </div>
-                <div class="project-content">
-                <div class="project-name">
-                    <p>PharmEasy</p>
-                </div>
-                <div class="project-info">
-                     <ul>
-                        <li><p>
-                            Registration facility with an OTP email.
-                        </p></li>
-                        <li><p>
-                            Added Healthcare products, Lab tests, RTPCR, etc pages.
-                        </p></li>
-                        <li><p>
-                            Payment gateway with Razorpay.
-                        </p></li>
-                     </ul>
-                </div>
-                <div class="tech-stack">
-                    <p>
-                        Tech stack- React | MongoDB | Express | NodeJS | Chakra UI | Git
-                     </p>
-                </div>
-                <div class="project-btns">
-                    <a href="#">Website</a>
-                    <a href="#">GitHub</a>
-                 </div>
+
+            <div class="home__social">
+                <a href="mailto:mohankrishna13012001@gmail.com" class="home__social-icon"><i class='bx bx-envelope'></i></a>
+                <a href="https://www.linkedin.com/in/venigalla-mohan-krishna/" target="_blank" class="home__social-icon"><i
+                        class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/mohankrish1" target="_blank" class="home__social-icon"><i
+                        class='bx bxl-github'></i></a>
+            </div>
+
+            <div class="home__img">
+                <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+
+                    <image class="home__blob-img home-img" x="50" href="./images/prefil.png" />
+                </svg>
+            </div>
+        </section>
+
+        <!--===== ABOUT =====-->
+        <section class="about section" id="about">
+            <h2 class="section-title">About</h2>
+            <div class="about__container bd-grid">
+                <div>
+                    <h2 class="about__subtitle" id="user-detail-name">I'am Venigalla Mohan Krishna</h2>
+                    <p class="about__text" id="user-detail-intro">A recent graduate with a strong foundation in backend
+                        technologies including Node.js, Express.js, and MongoDB. Proficient in frontend technologies
+                        such as HTML, CSS, JavaScript, and React.js. Passionate about building scalable and secure web
+                        applications. A detail-oriented and collaborative team player committed to continuous learning
+                        and growth. Excited to contribute to the success of the organization</p>
                 </div>
             </div>
-            <div class="project">
-                <div class="project-image_two">
+        </section>
+
+        <!--===== SKILLS =====-->
+        <section class="skills section" id="skills">
+            <h2 class="section-title">Skills</h2>
+
+            <div class="skills__container bd-grid">
+
+                <div class="skills-card">
+                    <div class="skills__names">
+                        <i class='bx bxl-nodejs skills-card-img'></i>
+                        <span class="skills-card-name">NodeJS</span>
+                    </div>
                 </div>
-                <div class="project-content">
-                <div class="project-name">
-                    <p>Lumen5</p>
+
+                <div class="skills-card">
+                    <div class="skills__names">
+                        <i class='bx bx-code-alt skills-card-img'></i>
+                        <span class="skills-card-name">Express</span>
+                    </div>
                 </div>
-                <div class="project-info">
-                     <ul>
-                        <li><p>
-                            Created the Sign-in and Sign-up routes.
-                        </p></li>
-                        <li><p>
-                            Created the whole backend for the website.
-                        </p></li>
-                        <li><p>
-                            Folder structure management.
-                        </p></li>
-                     </ul>
+
+                <div class="skills-card">
+                    <div class="skills__names">
+                        <i class='bx bxl-react skills__icon skills-card-img'></i>
+                        <span class="skills-card-name">React</span>
+                    </div>
                 </div>
-                <div class="tech-stack">
-                    <p>
-                        Tech stack- React | Node.js | MongoDB | Express | Git
-                     </p>
+
+                <div class="skills-card">
+                    <div class="skills__names">
+                        <i class='bx bxl-mongodb skills-card-img'><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24" style="fill: hsl(var(--hue-color), 89%, 60%);">
+                                <path
+                                    d="M13.74 4.23c-.84-1-1.57-2-1.71-2.22H12c-.14.21-.87 1.22-1.71 2.22-7.2 9.19 1.14 15.39 1.14 15.39l.07.05c.06.95.22 2.33.22 2.33h.62s.15-1.37.21-2.33l.07-.06s8.32-6.19 1.12-15.38zM12 19.48a3.48 3.48 0 0 1-.48-.48L12 9l.45 10a3.57 3.57 0 0 1-.45.48z">
+                                </path>
+                            </svg></i>
+
+                        <span class="skills-card-name">MongoDB</span>
+                    </div>
                 </div>
-                <div class="project-btns">
-                    <a href="#">Website</a>
-                    <a href="#">GitHub</a>
-                 </div>
+
+                <div class="skills-card">
+                    <div class="skills__names">
+                        <i class='bx bxs-data skills__icon skills-card-img'></i>
+                        <span class="skills-card-name">MySQL</span>
+                    </div>
+                </div>
+
+                <div class="skills-card">
+                    <div class="skills__names">
+                        <i class='bx bxl-html5 skills-card-img'></i>
+                        <span class="skills-card-name">HTML5</span>
+                    </div>
+                </div>
+
+                <div class="skills-card">
+                    <div class="skills__names">
+                        <i class='bx bxl-css3 skills-card-img'></i>
+                        <span class="skills-card-name">CSS3</span>
+                    </div>
+                </div>
+
+                <div class="skills-card">
+                    <div class="skills__names">
+                        <i class='bx bxl-javascript skills-card-img'></i>
+                        <span class="skills-card-name">JAVASCRIPT</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!--===== Projects =====-->
+        <section class="projects section" id="projects">
+            <h2 class="section-title">Projects</h2>
+
+            <div class="project__container bd-grid">
+
+                <!--
+                <div class="project-card">
+                    <img src="./images/skill mentor.png" alt="">
+                    <div class="project_details">
+                        <h1 class="project-title">Skill Mentor</h1>
+                        <h5 class="project-tech-stack">Node.js | Express | MongoDB | HTML | CSS | JavaScript</h5>
+                        <p class="project-description">Tutor Appointment: Web-based system for booking, managing
+                            appointments, and profiles. Admins oversee appointments, data, and user/teacher management.
+                        </p><br>
+                        <a href="https://github.com/abhimanyulp/Skill-Mentor" target="_blank"
+                            class="project-github-link"><i class='bx bxl-github skills__icon'></i></a>
+                        <a href="https://skill-mentor.netlify.app/" target="_blank" class="project-deployed-link"><i
+                                class='bx bx-link-external skills__icon'></i></a>
+                    </div>
+                </div> 
+                -->
+
+                <div class="project-card">
+                    <img src="./images/eStateX.png" alt="" width="100%">
+                    <div class="project_details">
+                        <h1 class="project-title">eStateX</h1>
+                        <h5 class="project-tech-stack">React | Redux | Typescript |
+                            TailwindCSS | Thunk | Chakra UI</h5>
+                        <p class="project-description">eStateX: Offers exclusive, time-sensitive deals on a variety of real estate properties, including residential homes, commercial spaces, and vacation properties. Discover and act quickly to find your ideal property.</p><br>
+                        <a href="https://github.com/Adarsh-ch/Tencent-Titans_033" target="_blank"
+                            class="project-github-link"><i class="bx bxl-github skills__icon"></i></a>
+                        <a href="https://estate-x.netlify.app" target="_blank" class="project-deployed-link"><i
+                                class='bx bx-link-external skills__icon'></i></a>
+                    </div>
+
+                </div>
+    
+                <div class="project-card">
+                    <img src="./images/calculator.png" alt="">
+                    <div class="project_details">
+                        <h1 class="project-title">Calcify</h1>
+                        <h5 class="project-tech-stack">React | Javascript | HTML | CSS 
+                        </h5>
+                        <p class="project-description">Calcify : perform quick and accurate calculations with our versatile Calculator. Designed for simplicity and efficiency, it handles basic arithmetic operations. Whether for everyday tasks or complex computations, get your results instantly!</p><br>
+                        <a href="https://mohankrish1.github.io/calculator/" target="_blank"
+                            class="project-github-link"><i class='bx bxl-github skills__icon'></i></a>
+                        <a href="https://cognivera-app.netlify.app/" target="_blank" class="project-deployed-link"><i
+                                class='bx bx-link-external skills__icon'></i></a>
+                    </div>
+
+                </div>
+
+                <div class="project-card">
+                    <img src="./images/sudoko.png" alt="">
+                    <div class="project_details">
+                        <h1 class="project-title">Sudoko Solver</h1>
+                        <h5 class="project-tech-stack">HTML | CSS | JavaScript</h5>
+                        <p class="project-description">
+                            Quickly and efficiently solve any Sudoku puzzle with our powerful, user-friendly Sudoku Solver. Enter your puzzle, and get instant solutions. Enhance your solving skills or simply find the answers you need effortlessly!
+                        </p>
+                        <br>
+                        <a href="https://github.com/mohankrish1/sudoko" target="_blank" class="project-github-link"><i
+                                class='bx bxl-github skills__icon'></i></a>
+                        <a href="https://mohankrish1.github.io/sudoko/" target="_blank" class="project-deployed-link"><i
+                                class='bx bx-link-external skills__icon'></i></a>
+                    </div>
+
+                </div>
+
+                <div class="project-card">
+                    <img src="./images/Basket-Heaven.png" alt="">
+                    <div class="project_details">
+                        <h1 class="project-title">Basket-Heaven</h1>
+                        <h5 class="project-tech-stack">HTML | CSS | JavaScript | Bootstrap | SASS | JSON-Server</h5>
+                        <p class="project-description">Bigbasket is known for its extensive product selection, competitive prices, and reliable delivery service, making it a popular choice for busy urban consumers looking for a convenient way to shop for groceries online.</p><br>
+                        <a href="https://github.com/sathwikreddy122/Basket-Heaven" target="_blank" class="project-github-link"><i
+                                class='bx bxl-github skills__icon'></i></a>
+                        <a href="https://66405eedbcb7ce8c1a800ea6--timely-froyo-5c39a1.netlify.app/" target="_blank" class="project-deployed-link"><i
+                                class='bx bx-link-external skills__icon'></i></a>
+                    </div>
+
+                </div>
+
+                <div class="project-card">
+                    <img src="./images/Casio.png" alt="">
+                    <div class="project_details">
+                        <h1 class="project-title">Casio G-Shock</h1>
+                        <h5 class="project-tech-stack">HTML | CSS | SASS | Bootstrap </h5>
+                        <p class="project-description">Casio G-Shock: a sleek and modern web application dedicated to showcasing the iconic Casio G-Shock watch collection with seamless navigation for users to explore their favourite G-Shock models.</p><br>
+                        <a href="https://github.com/mahesh06111999/in-watches-gshock-Debug-Dhyaan-2345" target="_blank"
+                            class="project-github-link"><i class='bx bxl-github skills__icon'></i></a>
+                        <a href="https://shimmering-hummingbird-825f31.netlify.app//" target="_blank" class="project-deployed-link"><i
+                                class='bx bx-link-external skills__icon'></i></a>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="bd-grid stats">
+
+                <a href="https://github.com/mohankrish1" class="stats_card"><img id="github-streak-stats"
+                        src="https://github-readme-streak-stats.herokuapp.com?user=mohankrish1" /></a>
+                <a href="https://github.com/mohankrish1" class="stats_card"><img id="github-stats-card"
+                        src="https://github-readme-stats.vercel.app/api?username=mohankrish1" /></a>
+                <a href="https://github.com/mohankrish1" class="stats_card">
+                    <img src="http://ghchart.rshah.org/mohankrish1" alt="Mohan Krishna's Github chart" /></a>
+                <a href="https://github.com/mohankrish1" class="stats_card"><img id="github-top-langs"
+                        src="https://github-readme-stats.vercel.app/api/top-langs/?username=mohankrish1" alt=""></a>
+
+            </div>
+
+        </section>
+
+        <!--===== CONTACT =====-->
+        <section class="contact section" id="contact">
+            <h2 class="section-title">Contact</h2>
+
+            <div class="contact__container bd-grid">
+                <div class="contact_details">
+                    <a href="mailto:mohankrishna13012001@gmail.com" class="contact_tag">
+                        <i class='bx bx-envelope skills__icon'></i>
+                        <span id="contact-email">mohankrishna13012001@gmail.com</span>
+                    </a>
+                    <a href="callto:+91-9390187875" class="contact_tag">
+                        <i class='bx bx-phone skills__icon'></i>
+                        <span id="contact-phone">+91-9390187875</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/venigalla-mohan-krishna/ " target="_blank" class="contact_tag">
+                        <i class='bx bxl-linkedin skills__icon'></i>
+                        <span id="contact-linkedin">linkedin.com/in/venigalla-mohan-krishna/</span>
+                    </a>
+                    <a href="https://github.com/mohankrish1" target="_blank" class="contact_tag">
+                        <i class='bx bxl-github skills__icon'></i>
+                        <span id="contact-github">github.com/mohankrish1</span>
+                    </a>
                 </div>
             </div>
-            <div class="project">
-                <div class="project-image_three">
-                </div>
-                <div class="project-content">
-                <div class="project-name">
-                    <p>Tanishq</p>
-                </div>
-                <div class="project-info">
-                     <ul>
-                        <li><p>
-                            Created the database and connected it with the files.
-                        </p></li>
-                        <li><p>
-                            Developed the Product and Product details page.
-                        </p></li>
-                        <li><p>
-                            Add numerous filtering and sorting functionalities.
-                        </p></li>
-                     </ul>
-                </div>
-                <div class="tech-stack">
-                    <p>
-                        Tech stack- HTML | CSS | ES6 | Git
-                     </p>
-                </div>
-                <div class="project-btns">
-                    <a href="#">Website</a>
-                    <a href="#">GitHub</a>
-                 </div>
-                </div>
-            </div>
-            <div class="project">
-                <div class="project-image_four">
-                </div>
-                <div class="project-content">
-                <div class="project-name">
-                    <p>NDTV</p>
-                </div>
-                <div class="project-info">
-                     <ul>
-                        <li><p>
-                            Variety of news pages like Latest, Covid, India etc
-                        </p></li>
-                        <li><p>
-                            Shows Static + Video headlines
-                        </p></li>
-                        <li><p>
-                            Provided proper sections for advertisements
-                        </p></li>
-                     </ul>
-                </div>
-                <div class="tech-stack">
-                    <p>
-                        Tech stack- React | Node.js | HTML | CSS | Git
-                     </p>
-                </div>
-                <div class="project-btns">
-                    <a href="#">Website</a>
-                    <a href="#">GitHub</a>
-                 </div>
-                </div>
-            </div>
-        </div>
-        <footer class="main-footer" id="contact">
-              <p class="highlight">Get in touch</p>
-              <p>Mohan Krishna</p>
-              <div class="social-media-links">
-              <a href="https://www.linkedin.com/in/venigalla-mohan-krishna-779497196/" class="social-media-btns">Linkedin</a>
-              <a href="https://github.com/mohankrish1" class="social-media-btns">GitHub</a>
-              <a href="mailto:mohankrishna13012001@gmail.com" class="social-media-btns">E-mail</a>
-              <a href="tel:+919390187875" class="social-media-btns">Phone</a>
-              </div>
-        </footer>
+        </section>
+    </main>
+
+    <!--===== FOOTER =====-->
+    <footer class="footer">
+        <p class="footer__title">Venigalla Mohan Krishna</p>
+        <p class="footer__copy">&#169; Mohan Krishna. All rigths reserved</p>
+    </footer>
+
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--===== MAIN JS =====-->
+    <script src="./scripts/index.js"></script>
 </body>
+
 </html>
